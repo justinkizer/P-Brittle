@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3243EB511EEA780300A1CA78 /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243EB501EEA780300A1CA78 /* LevelSelect.swift */; };
-		3243EB531EEA783100A1CA78 /* LevelSelect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3243EB521EEA783100A1CA78 /* LevelSelect.sks */; };
-		3243EB551EEA785400A1CA78 /* Collectibles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3243EB541EEA785400A1CA78 /* Collectibles.sks */; };
 		3243EB571EEA786400A1CA78 /* Collectibles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243EB561EEA786400A1CA78 /* Collectibles.swift */; };
 		3243EB591EEA795D00A1CA78 /* Level01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243EB581EEA795D00A1CA78 /* Level01.swift */; };
-		3243EB5B1EEA797A00A1CA78 /* Level01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3243EB5A1EEA797A00A1CA78 /* Level01.sks */; };
-		328E03B21EE7F5BE00C7F223 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 328E03B11EE7F5BE00C7F223 /* MainMenu.sks */; };
 		328E03B41EE7F5E800C7F223 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 328E03B31EE7F5E800C7F223 /* Actions.sks */; };
 		32C046351ED6B700008FAC96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C046341ED6B700008FAC96 /* AppDelegate.swift */; };
 		32C0463B1ED6B700008FAC96 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0463A1ED6B700008FAC96 /* MainMenu.swift */; };
@@ -44,12 +40,8 @@
 
 /* Begin PBXFileReference section */
 		3243EB501EEA780300A1CA78 /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelect.swift; sourceTree = "<group>"; };
-		3243EB521EEA783100A1CA78 /* LevelSelect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelect.sks; sourceTree = "<group>"; };
-		3243EB541EEA785400A1CA78 /* Collectibles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Collectibles.sks; sourceTree = "<group>"; };
 		3243EB561EEA786400A1CA78 /* Collectibles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectibles.swift; sourceTree = "<group>"; };
 		3243EB581EEA795D00A1CA78 /* Level01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level01.swift; sourceTree = "<group>"; };
-		3243EB5A1EEA797A00A1CA78 /* Level01.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level01.sks; sourceTree = "<group>"; };
-		328E03B11EE7F5BE00C7F223 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MainMenu.sks; path = ../../../../../.Trash/MainMenu.sks; sourceTree = "<group>"; };
 		328E03B31EE7F5E800C7F223 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = ../../../../../.Trash/Actions.sks; sourceTree = "<group>"; };
 		32C046311ED6B700008FAC96 /* P Brittle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "P Brittle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C046341ED6B700008FAC96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,14 +109,10 @@
 			children = (
 				328E03B31EE7F5E800C7F223 /* Actions.sks */,
 				32C0463A1ED6B700008FAC96 /* MainMenu.swift */,
-				328E03B11EE7F5BE00C7F223 /* MainMenu.sks */,
 				32C046341ED6B700008FAC96 /* AppDelegate.swift */,
 				3243EB501EEA780300A1CA78 /* LevelSelect.swift */,
-				3243EB521EEA783100A1CA78 /* LevelSelect.sks */,
 				3243EB561EEA786400A1CA78 /* Collectibles.swift */,
-				3243EB541EEA785400A1CA78 /* Collectibles.sks */,
 				3243EB581EEA795D00A1CA78 /* Level01.swift */,
-				3243EB5A1EEA797A00A1CA78 /* Level01.sks */,
 				32C0463C1ED6B700008FAC96 /* GameViewController.swift */,
 				32C0463E1ED6B700008FAC96 /* Main.storyboard */,
 				32C046411ED6B700008FAC96 /* Assets.xcassets */,
@@ -262,12 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				328E03B21EE7F5BE00C7F223 /* MainMenu.sks in Resources */,
 				32C046401ED6B700008FAC96 /* Main.storyboard in Resources */,
-				3243EB531EEA783100A1CA78 /* LevelSelect.sks in Resources */,
-				3243EB5B1EEA797A00A1CA78 /* Level01.sks in Resources */,
 				32C046421ED6B700008FAC96 /* Assets.xcassets in Resources */,
-				3243EB551EEA785400A1CA78 /* Collectibles.sks in Resources */,
 				32C046451ED6B700008FAC96 /* LaunchScreen.storyboard in Resources */,
 				328E03B41EE7F5E800C7F223 /* Actions.sks in Resources */,
 			);

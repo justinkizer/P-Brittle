@@ -10,16 +10,19 @@ import SpriteKit
 import GameplayKit
 
 class MainMenu: SKScene {
-    
-    var newGameButton = SKSpriteNode()
-    let newGameButtonTex = SKTexture(imageNamed: "MainMenu")
+
+    let button = SKSpriteNode(imageNamed: "NewGameButton")
+    let button2 = SKSpriteNode(imageNamed: "NewGameButton")
+    let button3 = SKSpriteNode(imageNamed: "NewGameButton")
     
     override func didMove(to view: SKView) {
         
-        newGameButton = SKSpriteNode(texture: newGameButtonTex)
-        newGameButton.position = CGPoint(x: frame.midX, y: frame.midY)
-        self.addChild(newGameButton)
-        
+        button.position = CGPoint(x: size.width * 0.5, y: size.height * 0.75)
+        button2.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        button3.position = CGPoint(x: size.width * 0.5, y: size.height * 0.25)
+        addChild(button)
+        addChild(button2)
+        addChild(button3)
     }
     
     func touchDown(atPoint pos : CGPoint) {
@@ -33,11 +36,34 @@ class MainMenu: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        SKAction.run() {
-            let transition = SKTransition.fade(withDuration: 1)
-            let scene = Level01(size: self.size)
-            self.view?.presentScene(scene, transition: transition)
+        if let touch = touches.first {
+            let pos = touch.location(in: self)
+            let node = self.atPoint(pos)
+            
+            if node == button {
+                if view != nil {
+                    let transition:SKTransition = SKTransition.fade(withDuration: 0.01)
+                    let scene:SKScene = Level01(size: self.size)
+                    self.view?.presentScene(scene, transition: transition)
+                }
+            }
+            if node == button2 {
+                if view != nil {
+                    let transition:SKTransition = SKTransition.fade(withDuration: 0.01)
+                    let scene:SKScene = LevelSelect(size: self.size)
+                    self.view?.presentScene(scene, transition: transition)
+                }
+            }
+            if node == button3 {
+                if view != nil {
+                    let transition:SKTransition = SKTransition.fade(withDuration: 0.01)
+                    let scene:SKScene = Collectibles(size: self.size)
+                    self.view?.presentScene(scene, transition: transition)
+                }
+            }
+
         }
+        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
